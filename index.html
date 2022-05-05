@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	IsWeixinOrAlipay();
+	function IsWeixinOrAlipay(){
+		var ua = window.navigator.userAgent.toLowerCase();
+		//判断是不是微信
+		if ( ua.match(/MicroMessenger/i) == 'micromessenger' ) {
+			document.location.href="https://qr.95516.com/01053930/CCB997105006873995159@038886646";
+		}else if (ua.match(/AlipayClient/i) == 'alipayclient') {//判断是不是支付宝
+			document.location.href="http://192.168.11.26/tool/use-wechat.html";
+		}else{
+			document.location.href="http://192.168.11.26/tool/use-wechat.html";
+		}
+	}
+</script>
